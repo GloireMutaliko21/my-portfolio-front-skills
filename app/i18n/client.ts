@@ -28,7 +28,7 @@ i18next
 		...getOptions(),
 		lng: undefined, // let detect the language on client side
 		detection: {
-			order: ['path', 'htmlTag', 'navigator', 'cookie'],
+			order: ['navigator', 'path', 'htmlTag', 'cookie'],
 		},
 		preload: runsOnServerSide ? languages : [],
 	});
