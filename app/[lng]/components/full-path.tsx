@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-const FullPath = ({ link = '', label }: { link: string; label: string }) => {
+const FullPath = ({ link = '', label }: { link: string; label: any }) => {
 	const fullPath = usePathname();
 
 	return (
