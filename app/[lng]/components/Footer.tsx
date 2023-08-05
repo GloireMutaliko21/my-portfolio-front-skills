@@ -3,13 +3,14 @@
 import { HiMiniArrowUpRight } from 'react-icons/hi2';
 
 import { useTranslation } from '@/app/i18n/client';
-import { socialMedia } from '../data/footerdata';
+import { navigationLink, socialMedia } from '../data/footerdata';
 import SocialMedia from './footer/SocialMedia';
+import FullPath from './full-path';
 
 const Footer = ({ lng }: any) => {
 	const { t } = useTranslation(lng, 'footer', {});
 	return (
-		<footer className='py-5 xl:py-10 w-full mt-16 bg-[#0f172a] text-white px-2 md:px-10 lg:px-16 xl:px-20 2xl:px-72 lg:h-screen 2xl:h-[75vh]'>
+		<footer className='py-5 xl:py-10 w-full mt-16 bg-[#0f172a] text-white px-2 md:px-10 lg:px-16 xl:px-20 2xl:px-72'>
 			<section className='py-14 -translate-y-[80%] px-5 lg:px-14 mt-12 rounded-2xl flex flex-wrap justify-between items-center gap-y-10 bg-[url("/images/newsletter-bg.webp")] bg-cover text-center lg:text-start'>
 				<div className='max-w-full lg:max-w-[50%] px-8'>
 					<h1 className='font-bold text-3xl md:text-5xl !leading-tight'>
@@ -34,23 +35,26 @@ const Footer = ({ lng }: any) => {
 					</div>
 				</div>
 			</section>
-			<section className='pt-20 -translate-y-[70%] flex flex-wrap justify-between items-center gap-y-10'>
-				<div className='max-w-full lg:max-w-[50%]'>
-					<h1 className='font-bold text-3xl md:text-5xl !leading-tight'>
+			<section className='pt-20 pb-20 -translate-y-80 lg:-translate-y-56 flex flex-col justify-between items-center border-b text-center md:text-start'>
+				<div className='max-w-full w-full flex flex-wrap justify-between'>
+					<h1 className='font-bold text-3xl md:text-5xl !leading-tight w-full'>
 						Lets make something
 						<br /> great together
 					</h1>
-					<button className='text-[#0c4a6e] bg-white rounded-full mt-12 px-5 min-w-[30%] font-semibold duration-300 py-3 flex items-center gap-2'>
-						Contact me
-						<HiMiniArrowUpRight className='text-xl' />
-					</button>
-				</div>
-				<div className='max-w-full lg:max-w-[30%]'>
-					<p>
+					<p className='w-full lg:max-w-[50%] xl:max-w-[29%] mt-7 lg:mt-0 mx-6 '>
 						Find me on my social and professional networks, leave me a message
 						and I&apos;ll get back to you as soon as possible.
 					</p>
-					<div className='mt-7 grid lg:grid-cols-3 gap-6'>
+				</div>
+				<div className='max-w-full w-full flex flex-wrap flex-col lg:flex-row gap-y-8 justify-between items-center'>
+					{/* <div className='max-w-full lg:max-w-[35%] 2xl:max-w-[30%]'> */}
+					<div className='w-50% mt-10'>
+						<button className='text-[#0c4a6e] bg-white rounded-full px-5 min-w-[30%] font-semibold duration-300 py-3 flex items-center gap-2'>
+							Contact me
+							<HiMiniArrowUpRight className='text-xl' />
+						</button>
+					</div>
+					<div className='grid grid-cols-2 lg:grid-cols-3 gap-y-6 w-full mt-10 lg:mt-0'>
 						{socialMedia.map((socMed, key) => (
 							<SocialMedia
 								key={key}
@@ -60,6 +64,16 @@ const Footer = ({ lng }: any) => {
 							/>
 						))}
 					</div>
+				</div>
+			</section>
+			<section className='-translate-y-72 lg:-translate-y-48 -mb-72 lg:-mb-48 flex justify-between items-center flex-col lg:flex-row'>
+				<div className='flex gap-5 items-center font-bold mb-7'>
+					{navigationLink.map((nav: any, key) => (
+						<FullPath label={nav.label} link={nav.link} key={key} />
+					))}
+				</div>
+				<div className='text-end text-slate-400'>
+					&copy; Gloire Mutaliko 2022. All rights reserved.
 				</div>
 			</section>
 		</footer>

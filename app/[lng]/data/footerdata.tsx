@@ -38,3 +38,22 @@ export const socialMedia: { label: string; icon: any; externalLink: string }[] =
 			externalLink: '/',
 		},
 	];
+
+export const navigationLink: { label: string; link: string }[] = [
+	{
+		label: 'Home',
+		link: '/',
+	},
+	{
+		label: 'About',
+		link: '/',
+	},
+	{
+		label: 'Work',
+		link: '/',
+	},
+	{
+		label: 'Contacts',
+		link: '/',
+	},
+];
