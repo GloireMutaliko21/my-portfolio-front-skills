@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import DesignServices from './services/DesignServices';
 import DevServices from './services/DevServices';
+import DbServices from './services/DbServices';
 
 const Services = () => {
 	const [currServices, setCurrServices] = useState({
@@ -79,6 +80,7 @@ const Services = () => {
 				<div>
 					{currServices.design && <DesignServices />}
 					{currServices.development && <DevServices />}
+					{currServices.conception && <DbServices />}
 				</div>
 			</div>
 		</section>
