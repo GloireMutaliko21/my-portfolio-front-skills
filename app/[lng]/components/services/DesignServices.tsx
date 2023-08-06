@@ -4,7 +4,7 @@ import { TbUserSearch } from 'react-icons/tb';
 
 const DesignServices = () => {
 	return (
-		<section className='flex gap-5 justify-center mt-16 duration-300'>
+		<section className='flex flex-col lg:flex-row gap-5 justify-center mt-16 duration-300'>
 			{/* UI/UX */}
 			<div className='border rounded-2xl scale-95 hover:scale-100 duration-500 p-12 px-8 bg-slate-100 group/main'>
 				<div className='w-full flex justify-center'>
