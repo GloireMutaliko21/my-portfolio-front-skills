@@ -56,6 +56,9 @@ dependencies:
   react-icons:
     specifier: ^4.10.1
     version: 4.10.1(react@18.2.0)
+  react-ts-typewriter:
+    specifier: 0.1.8-b
+    version: 0.1.8-b
   tailwindcss:
     specifier: 3.3.3
     version: 3.3.3
@@ -3088,6 +3091,13 @@ packages:
 
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: false
+
+  /react-ts-typewriter@0.1.8-b:
+    resolution: {integrity: sha512-vCXRMvF6J9ihrl+NZfpgTmgxj3nG2f6l+YqS2Up8SkwWbraPLRU0H32cPg7F76Y8tn311Cgaro2nLFja5/tGWA==}
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /react@18.2.0:
