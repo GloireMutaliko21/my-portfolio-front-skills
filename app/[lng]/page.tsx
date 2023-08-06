@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useTranslation } from '../i18n';
 import { fallbackLng, languages } from '../i18n/settings';
 import Hero from './components/Hero';
+import Experience from './components/Experience';
 
 export async function generateMetadata({ params: { lng } }: any) {
 	const { t } = await useTranslation(lng, '');
@@ -17,6 +18,7 @@ export default function Home() {
 	return (
 		<main className='flex min-h-screen flex-col items-center justify-between'>
 			<Hero />
+			<Experience />
 		</main>
 	);
 }

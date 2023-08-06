@@ -102,7 +102,7 @@ const Hero = () => {
 								<GoShieldCheck className='text-5xl text-green-500' />
 								<div>
 									<p className='text-xl font-bold mb-1'>30+</p>
-									<p className='text-sm font-light'>Complete Projects</p>
+									<p className='text-sm font-light'>Completed Projects</p>
 								</div>
 							</div>
 						</div>
