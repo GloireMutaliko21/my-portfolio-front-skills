@@ -8,7 +8,7 @@ import Typewriter from 'react-ts-typewriter';
 
 const Hero = () => {
 	return (
-		<section className='py-5 w-full px-2 md:px-10 lg:px-16 xl:px-20 2xl:px-72 h-[80vh] text-[#0f172a]'>
+		<section className='py-5 w-full px-2 md:px-10 lg:px-16 xl:px-20 2xl:px-72 lg:h-[80vh] text-[#0f172a]'>
 			<div className='flex flex-col-reverse lg:flex-row justify-between items-center gap-y-14 h-full'>
 				<div className='h-full flex flex-col justify-center'>
 					<h2 className='text-2xl md:text-3xl lg:text-5xl text-slate-600'>
@@ -62,7 +62,7 @@ const Hero = () => {
 					</div>
 				</div>
 				<div className='relative'>
-					<div className='relative h-[80vh] z-0 w-72 bg-[#0f172a] overflow-hidden'>
+					<div className='hidden lg:block relative h-[80vh] z-0 w-72 bg-[#0f172a] overflow-hidden'>
 						<div className='absolute border-white/40 w-36 h-36 border-2 -top-7 -left-7 rounded-full'></div>
 						<div className='absolute border-white/40 w-36 h-36 border-2 -bottom-7 -right-7 rounded-full'></div>
 						<div className='absolute border-white/40 w-96 h-96 border-2 -bottom-7 -right-7 rounded-full'></div>
@@ -70,7 +70,7 @@ const Hero = () => {
 						<div className='absolute w-14 h-14 bg-white/75 top-[17%] left-[50%] rotate-45'></div>
 						{/* <div className='absolute w-14 h-14 bg-white/75 bottom-[10%] right-[60%] rotate-45'></div> */}
 					</div>
-					<div className='lg:absolute top-[70px] right-[30%]'>
+					<div className='lg:absolute lg:top-[70px] lg:right-[30%]'>
 						<div className='bg-[#3fc4e9] w-96 h-96 rounded-full bg-[url("/images/me.png")] bg-cover relative'>
 							<div className='absolute w-24 h-24 border p-3 bg-white rounded-xl shadow-2xl'>
 								<Image
@@ -98,7 +98,7 @@ const Hero = () => {
 									className='object-cover'
 								/>
 							</div>
-							<div className='absolute border shadow-2xl flex gap-3 items-center px-7 py-2 bg-white rounded-full bottom-8 -left-28'>
+							<div className='absolute border shadow-2xl flex gap-3 items-center px-7 py-2 bg-white rounded-full bottom-8 left-0 lg:-left-28'>
 								<GoShieldCheck className='text-5xl text-green-500' />
 								<div>
 									<p className='text-xl font-bold mb-1'>30+</p>
