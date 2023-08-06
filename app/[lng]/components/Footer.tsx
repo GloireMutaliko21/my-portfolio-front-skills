@@ -36,25 +36,24 @@ const Footer = ({ lng }: any) => {
 				</div>
 			</section>
 			<section className='pt-20 pb-20 -translate-y-80 lg:-translate-y-56 flex flex-col justify-between items-center border-b text-center md:text-start'>
-				<div className='max-w-full w-full flex flex-wrap justify-between'>
+				<div className='max-w-full w-full flex flex-col lg:flex-row justify-between'>
 					<h1 className='font-bold text-3xl md:text-5xl !leading-tight w-full'>
 						Lets make something
 						<br /> great together
 					</h1>
-					<p className='w-full lg:max-w-[50%] xl:max-w-[29%] mt-7 lg:mt-0 mx-6 '>
+					<p className='w-full lg:max-w-[50%] xl:max-w-[34%] 2xl:max-w-[30%] mt-7 lg:mt-0'>
 						Find me on my social and professional networks, leave me a message
 						and I&apos;ll get back to you as soon as possible.
 					</p>
 				</div>
-				<div className='max-w-full w-full flex flex-wrap flex-col lg:flex-row gap-y-8 justify-between items-center'>
-					{/* <div className='max-w-full lg:max-w-[35%] 2xl:max-w-[30%]'> */}
+				<div className='max-w-full w-full flex flex-col lg:flex-row gap-y-8 justify-between items-center'>
 					<div className='w-50% mt-10'>
 						<button className='text-[#0c4a6e] bg-white rounded-full px-5 min-w-[30%] font-semibold duration-300 py-3 flex items-center gap-2'>
 							Contact me
 							<HiMiniArrowUpRight className='text-xl' />
 						</button>
 					</div>
-					<div className='grid grid-cols-2 lg:grid-cols-3 gap-y-6 w-full mt-10 lg:mt-0'>
+					<div className='grid grid-cols-2 lg:grid-cols-3 gap-y-6 w-full lg:w-auto mt-10 lg:mt-0'>
 						{socialMedia.map((socMed, key) => (
 							<SocialMedia
 								key={key}
