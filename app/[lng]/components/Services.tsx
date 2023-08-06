@@ -13,7 +13,7 @@ const Services = () => {
 	});
 
 	return (
-		<section className='py-5 w-full px-2 md:px-10 lg:px-16 xl:px-20 2xl:px-72 text-[#0f172a] mb-48 lg:mb-56'>
+		<section className='py-5 w-full px-2 md:px-10 lg:px-16 xl:px-20 2xl:px-72 text-[#0f172a] mb-10 lg:mb-20'>
 			<div className='text-center'>
 				<h1 className='text-5xl font-extrabold mb-7 mt-10 lg:mt-0'>
 					Provided Services

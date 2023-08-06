@@ -6,6 +6,7 @@ import { fallbackLng, languages } from '../i18n/settings';
 import Hero from './components/Hero';
 import Experience from './components/Experience';
 import Services from './components/Services';
+import Projects from './components/Projects';
 
 export async function generateMetadata({ params: { lng } }: any) {
 	const { t } = await useTranslation(lng, '');
@@ -21,6 +22,7 @@ export default function Home() {
 			<Hero />
 			<Experience />
 			<Services />
+			<Projects />
 		</main>
 	);
 }
