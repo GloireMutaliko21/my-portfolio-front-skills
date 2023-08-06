@@ -1,3 +1,6 @@
+import { experiencesData } from '../data/experienceData';
+import ExperienceCard from './experience/ExperienceCard';
+
 const Experience = () => {
 	return (
 		<section className='py-5 w-full px-2 md:px-10 lg:px-16 xl:px-20 2xl:px-72 h-screen text-[#0f172a] my-10 lg:mt-28'>
@@ -29,7 +32,17 @@ const Experience = () => {
 						converge to <br />
 						ensure the highest quality outcome.
 					</p>
-					<div className='grid md: grid-cols-2 lg:grid-cols-3'></div>
+					<div className='grid md: grid-cols-2 lg:grid-cols-3 gap-7 mt-10'>
+						{experiencesData.map((exp, key) => (
+							<ExperienceCard
+								key={key}
+								color={exp.color}
+								label={exp.label}
+								percent={exp.percent}
+								textColor={exp.textColor}
+							/>
+						))}
+					</div>
 				</div>
 			</div>
 		</section>
