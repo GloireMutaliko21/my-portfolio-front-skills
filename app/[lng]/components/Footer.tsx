@@ -48,10 +48,15 @@ const Footer = ({ lng }: any) => {
 				</div>
 				<div className='max-w-full w-full flex flex-col lg:flex-row gap-y-8 justify-between items-center'>
 					<div className='w-50% mt-10'>
-						<button className='text-[#0c4a6e] bg-white rounded-full px-5 min-w-[30%] font-semibold duration-300 py-3 flex items-center gap-2'>
-							Contact me
-							<HiMiniArrowUpRight className='text-xl' />
-						</button>
+						<FullPath
+							label={
+								<button className='text-[#0c4a6e] bg-white rounded-full px-5 min-w-[30%] font-semibold duration-300 py-3 flex items-center gap-2'>
+									Contact me
+									<HiMiniArrowUpRight className='text-xl' />
+								</button>
+							}
+							link='/#contacts'
+						/>
 					</div>
 					<div className='grid grid-cols-2 lg:grid-cols-3 gap-y-6 w-full lg:w-auto mt-10 lg:mt-0'>
 						{socialMedia.map((socMed, key) => (
