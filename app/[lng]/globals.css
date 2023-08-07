@@ -37,6 +37,7 @@ html {
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
 	background: white;
+	scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
