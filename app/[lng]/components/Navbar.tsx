@@ -6,12 +6,13 @@ import {
 	useRouter,
 	useSelectedLayoutSegment,
 } from 'next/navigation';
+import Link from 'next/link';
 import { DiAtom } from 'react-icons/di';
+import { PiDownloadSimpleThin } from 'react-icons/pi';
 
 import FullPath from './full-path';
 import { useTranslation } from '@/app/i18n/client';
 import { languages } from '@/app/i18n/settings';
-import Link from 'next/link';
 
 const Navbar = ({ lng }: any) => {
 	const { t } = useTranslation(lng, 'navbar', {});
@@ -77,15 +78,23 @@ const Navbar = ({ lng }: any) => {
 					About
 				</Link>
 				<Link
-					href={`${fullPath.slice(0, 3)}/#work`}
+					href={`${fullPath.slice(0, 3)}/#services`}
 					className={`duration-150 ${
 						activeLink === '#work' && 'border-b-2 pb-3 font-medium'
 					} hover:border-b-4 hover:font-medium`}
 				>
-					Work
+					Services
 				</Link>
 				<Link
-					href={`${fullPath.slice(0, 3)}/#contact`}
+					href={`${fullPath.slice(0, 3)}/#projects`}
+					className={`duration-150 ${
+						activeLink === '#work' && 'border-b-2 pb-3 font-medium'
+					} hover:border-b-4 hover:font-medium`}
+				>
+					Projects
+				</Link>
+				<Link
+					href={`${fullPath.slice(0, 3)}/#contacts`}
 					className={`duration-150 ${
 						activeLink === '#contact' && 'border-b-2 pb-3 font-medium'
 					} hover:border-b-4 hover:font-medium`}
@@ -94,15 +103,18 @@ const Navbar = ({ lng }: any) => {
 				</Link>
 			</div>
 			<div>
-				<button
-					className={`${
-						scrolling
-							? 'text-[#0f172a] bg-white hover:bg-white/90 shadow-white'
-							: 'bg-[#0f172a] hover:bg-[#192849] text-white'
-					} py-3 px-10 rounded-full hover:shadow-lg duration-300`}
-				>
-					Resume
-				</button>
+				<a href='/CV_GloireMutaliko.pdf' download>
+					<button
+						className={`${
+							scrolling
+								? 'text-[#0f172a] bg-white hover:bg-white/90 shadow-white'
+								: 'bg-[#0f172a] hover:bg-[#192849] text-white'
+						} py-3 px-10 rounded-full hover:shadow-lg duration-300 flex gap-4 items-center`}
+					>
+						<span>Resume</span>
+						<PiDownloadSimpleThin className='text-xl' />
+					</button>
+				</a>
 			</div>
 		</nav>
 	);

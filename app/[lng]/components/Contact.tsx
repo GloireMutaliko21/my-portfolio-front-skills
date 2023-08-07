@@ -103,7 +103,10 @@ const Contact = () => {
 	};
 
 	return (
-		<section className='py-5 w-full px-2 md:px-10 lg:px-16 xl:px-20 2xl:px-72 text-[#0f172a] mb-48 lg:mb-28'>
+		<section
+			id='contacts'
+			className='py-5 w-full px-2 md:px-10 lg:px-16 xl:px-20 2xl:px-72 text-[#0f172a] mb-48 lg:mb-28'
+		>
 			<div className='text-center'>
 				<div className='mb-10 lg:mb-14'>
 					<h1 className='text-5xl font-extrabold mb-7'>Let&apos;s Talk</h1>
