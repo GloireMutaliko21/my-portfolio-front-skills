@@ -18,7 +18,10 @@ import { TfiLayoutGrid3Alt } from 'react-icons/tfi';
 
 const Projects = () => {
 	return (
-		<section className='py-5 w-full px-2 md:px-10 lg:px-16 xl:px-20 2xl:px-72 text-[#0f172a] lg:mb-20'>
+		<section
+			id='projects'
+			className='py-5 w-full px-2 md:px-10 lg:px-16 xl:px-20 2xl:px-72 text-[#0f172a] lg:mb-20'
+		>
 			<div className='text-center lg:text-start'>
 				<div className='flex justify-between items-center'>
 					<div>

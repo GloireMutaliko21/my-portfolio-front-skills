@@ -50,7 +50,7 @@ export const navigationLink: { label: string; link: string }[] = [
 	},
 	{
 		label: 'Services',
-		link: '/#ervices',
+		link: '/#services',
 	},
 	{
 		label: 'Projects',

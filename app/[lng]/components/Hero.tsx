@@ -8,7 +8,10 @@ import Typewriter from 'react-ts-typewriter';
 
 const Hero = () => {
 	return (
-		<section className='py-5 w-full px-2 md:px-10 lg:px-16 xl:px-20 2xl:px-72 lg:h-[80vh] text-[#0f172a]'>
+		<section
+			id='home'
+			className='py-5 w-full px-2 md:px-10 lg:px-16 xl:px-20 2xl:px-72 lg:h-[80vh] text-[#0f172a]'
+		>
 			<div className='flex flex-col-reverse lg:flex-row justify-between items-center gap-y-14 h-full'>
 				<div className='h-full flex flex-col justify-center'>
 					<h2 className='text-2xl md:text-3xl lg:text-5xl text-slate-600'>
