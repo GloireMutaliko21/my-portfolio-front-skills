@@ -78,15 +78,23 @@ const Navbar = ({ lng }: any) => {
 					About
 				</Link>
 				<Link
-					href={`${fullPath.slice(0, 3)}/#work`}
+					href={`${fullPath.slice(0, 3)}/#services`}
 					className={`duration-150 ${
 						activeLink === '#work' && 'border-b-2 pb-3 font-medium'
 					} hover:border-b-4 hover:font-medium`}
 				>
-					Work
+					Services
 				</Link>
 				<Link
-					href={`${fullPath.slice(0, 3)}/#contact`}
+					href={`${fullPath.slice(0, 3)}/#projects`}
+					className={`duration-150 ${
+						activeLink === '#work' && 'border-b-2 pb-3 font-medium'
+					} hover:border-b-4 hover:font-medium`}
+				>
+					Projects
+				</Link>
+				<Link
+					href={`${fullPath.slice(0, 3)}/#contacts`}
 					className={`duration-150 ${
 						activeLink === '#contact' && 'border-b-2 pb-3 font-medium'
 					} hover:border-b-4 hover:font-medium`}
