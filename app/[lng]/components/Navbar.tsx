@@ -27,7 +27,6 @@ const Navbar = ({ lng }: any) => {
 	const onLangChange = (value: string) => {
 		router.replace(`./${value}/${activeLink != null ? activeLink : '/'}`);
 	};
-	console.log(fullPath);
 
 	useEffect(() => {
 		const handleScroll = () => {

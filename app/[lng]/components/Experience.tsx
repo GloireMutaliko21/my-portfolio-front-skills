@@ -3,7 +3,7 @@ import ExperienceCard from './experience/ExperienceCard';
 
 const Experience = () => {
 	return (
-		<section className='py-5 w-full px-2 md:px-10 lg:px-16 xl:px-20 2xl:px-72 text-[#0f172a] mt-10 lg:mt-28 mb-48 lg:mb-28'>
+		<section className='py-5 w-full px-2 md:px-10 lg:px-16 xl:px-20 2xl:px-72 text-[#0f172a] mt-10 lg:mt-28 mb-3 lg:mb-28'>
 			<div className='flex justify-between flex-col lg:flex-row items-center'>
 				<div className='bg-transparent'>
 					<div className='relative bg-gradient-to-b from-slate-100 to-white rounded-xl h-[430px] w-[360px] border-b'>
