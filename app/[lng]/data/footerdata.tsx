@@ -10,32 +10,33 @@ export const socialMedia: { label: string; icon: any; externalLink: string }[] =
 		{
 			label: 'Email me',
 			icon: <TfiEmail />,
-			externalLink: '/',
+			externalLink: '/#contacts',
 		},
 		{
 			label: 'Facebook',
 			icon: <PiFacebookLogo />,
-			externalLink: '/',
+			externalLink: 'https://web.facebook.com/golla.mutaliko',
 		},
 		{
 			label: 'Instagram',
 			icon: <PiInstagramLogoThin />,
-			externalLink: '/',
+			externalLink:
+				'https://instagram.com/irgloiremutaliko?igshid=MjEwN2IyYWYwYw==',
 		},
 		{
 			label: 'Twitter',
 			icon: <PiTwitterLogoThin />,
-			externalLink: '/',
+			externalLink: 'https://twitter.com/GloireMutaliko',
 		},
 		{
 			label: 'LinkedIn',
 			icon: <PiLinkedinLogoThin />,
-			externalLink: '/',
+			externalLink: 'https://www.linkedin.com/in/gloire-mutaliko-2b6733211/',
 		},
 		{
 			label: 'Github',
 			icon: <BiLogoGithub />,
-			externalLink: '/',
+			externalLink: 'https://github.com/GloireMutaliko21',
 		},
 	];
 
