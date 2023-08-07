@@ -62,7 +62,7 @@ const Hero = () => {
 					</div>
 				</div>
 				<div className='relative'>
-					<div className='hidden lg:block relative h-[80vh] z-0 w-72 bg-[#0f172a] overflow-hidden'>
+					<div className='hidden lg:block relative h-[80vh] 2xl:h-[50vh] z-0 w-72 bg-[#0f172a] overflow-hidden'>
 						<div className='absolute border-white/40 w-36 h-36 border-2 -top-7 -left-7 rounded-full'></div>
 						<div className='absolute border-white/40 w-36 h-36 border-2 -bottom-7 -right-7 rounded-full'></div>
 						<div className='absolute border-white/40 w-96 h-96 border-2 -bottom-7 -right-7 rounded-full'></div>
