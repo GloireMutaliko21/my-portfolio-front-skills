@@ -3,11 +3,18 @@ import { FaReact } from 'react-icons/fa';
 import { PiArrowSquareOutThin } from 'react-icons/pi';
 import {
 	SiAntdesign,
+	SiCreatereactapp,
+	SiExpress,
 	SiFigma,
+	SiMysql,
+	SiNestjs,
 	SiNextdotjs,
+	SiPostgresql,
+	SiPrisma,
 	SiRedux,
 	SiTailwindcss,
 } from 'react-icons/si';
+import { TfiLayoutGrid3Alt } from 'react-icons/tfi';
 
 const Projects = () => {
 	return (
@@ -102,6 +109,133 @@ const Projects = () => {
 					</div>
 					<div className='w-full shadow-md border-t-2 border-sky-800 bg-transparent hover:bg-slate-100 duration-300 flex flex-col group/main'>
 						<div className='cursor-pointer'>
+							<div className='w-full h-72 border-b-2 bg-[url("/images/projects/figma.jpg")] bg-contain'>
+								<div className='w-full h-full bg-black/20'></div>
+							</div>
+							<div className='w-full p-5 flex justify-between items-end'>
+								<div>
+									<p className='text-2xl font-semibold text-neutral'>
+										Agency Landing page and Blog
+									</p>
+								</div>
+							</div>
+							<div className='w-full flex justify-between items-end p-5 pt-0 mb-3'>
+								<div className='flex gap-3 items-center justify-start mt-5'>
+									<div className='flex items-center gap-1'>
+										<SiFigma className='text-pink-400 text-xl' />
+										<span className='font-medium text-sm'>Figma</span>
+									</div>
+								</div>
+								<a
+									href='https://www.figma.com/proto/gwLgGU1KekInUjzM2NzYh3/Projet-GDA-Students?type=design&node-id=192-2940&t=cHRRu8KNa4ZCXZ6C-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=192%3A2940&show-proto-sidebar=1'
+									target='_blank'
+								>
+									<button className='border group-hover/main:bg-white border-sky-600 py-1 px-5 rounded group-hover/main:shadow-lg duration-300 font-medium flex gap-2 items-center text-sky-600'>
+										<span>Visit</span>
+										<PiArrowSquareOutThin />
+									</button>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div className='w-full shadow-md border-t-2 border-sky-800 bg-transparent hover:bg-slate-100 duration-300 flex flex-col group/main'>
+						<div className='cursor-pointer'>
+							<div className='w-full h-72 border-b-2 bg-[url("/images/projects/appatete.jpg")] bg-contain'>
+								<div className='w-full h-full bg-black/20'></div>
+							</div>
+							<div className='w-full p-5 flex justify-between items-end'>
+								<div>
+									<p className='text-2xl font-semibold text-neutral'>
+										Company management System
+									</p>
+								</div>
+							</div>
+							<div className='w-full flex justify-between items-end p-5 pt-0 mb-3'>
+								<div className='grid grid-cols-2 gap-3 mt-5'>
+									<div className='flex items-center gap-1'>
+										<FaReact className='text-sky-500 text-xl' />
+										<span className='font-medium text-sm'>React.js</span>
+									</div>
+									<div className='flex items-center gap-1'>
+										<SiTailwindcss className='text-sky-600 text-xl' />
+										<span className='font-medium text-sm'>Tailwindcss</span>
+									</div>
+									<div className='flex items-center gap-1'>
+										<SiAntdesign className='text-indigo-500 text-xl' />
+										<span className='font-medium text-sm'>Antd</span>
+									</div>
+									<div className='flex items-center gap-1'>
+										<SiRedux className='text-violet-700 text-xl' />
+										<span className='font-medium text-sm'>Redux TK</span>
+									</div>
+									<div className='flex items-center gap-1'>
+										<SiExpress className='text-blue-700 text-xl' />
+										<span className='font-medium text-sm'>Express.js</span>
+									</div>
+									<div className='flex items-center gap-1'>
+										<SiPostgresql className='text-cyan-700 text-xl' />
+										<span className='font-medium text-sm'>Postgres</span>
+									</div>
+								</div>
+								<a href='https://app.adminatete.com' target='_blank'>
+									<button className='border group-hover/main:bg-white border-sky-600 py-1 px-5 rounded group-hover/main:shadow-lg duration-300 font-medium flex gap-2 items-center text-sky-600'>
+										<span>Visit</span>
+										<PiArrowSquareOutThin />
+									</button>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div className='w-full shadow-md border-t-2 border-sky-800 bg-transparent hover:bg-slate-100 duration-300 flex flex-col group/main'>
+						<div className='cursor-pointer'>
+							<div className='w-full h-72 border-b-2 bg-[url("/images/projects/elbamu.jpg")] bg-cover'>
+								<div className='w-full h-full bg-black/20'></div>
+							</div>
+							<div className='w-full p-5 flex justify-between items-end'>
+								<div>
+									<p className='text-2xl font-semibold text-neutral'>
+										Wholesale management App
+									</p>
+								</div>
+							</div>
+							<div className='w-full flex justify-between items-end p-5 pt-0 mb-3'>
+								<div className='grid grid-cols-2 gap-3 mt-5'>
+									<div className='flex items-center gap-1'>
+										<FaReact className='text-sky-500 text-xl' />
+										<span className='font-medium text-sm'>React.js</span>
+									</div>
+									<div className='flex items-center gap-1'>
+										<SiTailwindcss className='text-sky-600 text-xl' />
+										<span className='font-medium text-sm'>Tailwindcss</span>
+									</div>
+									<div className='flex items-center gap-1'>
+										<TfiLayoutGrid3Alt className='text-indigo-900 text-lg' />
+										<span className='font-medium text-sm'>Syncfusion</span>
+									</div>
+									<div className='flex items-center gap-1'>
+										<SiCreatereactapp className='text-violet-700 text-xl' />
+										<span className='font-medium text-sm'>Context API</span>
+									</div>
+									<div className='flex items-center gap-1'>
+										<SiExpress className='text-blue-700 text-xl' />
+										<span className='font-medium text-sm'>Express.js</span>
+									</div>
+									<div className='flex items-center gap-1'>
+										<SiMysql className='text-orange-600 text-2xl' />
+										<span className='font-medium text-sm'>MySQL</span>
+									</div>
+								</div>
+								<a href='https://el-bamu.com' target='_blank'>
+									<button className='border group-hover/main:bg-white border-sky-600 py-1 px-5 rounded group-hover/main:shadow-lg duration-300 font-medium flex gap-2 items-center text-sky-600'>
+										<span>Visit</span>
+										<PiArrowSquareOutThin />
+									</button>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div className='w-full shadow-md border-t-2 border-sky-800 bg-transparent hover:bg-slate-100 duration-300 flex flex-col group/main'>
+						<div className='cursor-pointer'>
 							<div className='w-full h-72 border-b-2 bg-[url("/images/projects/adminatete.jpg")] bg-cover'>
 								<div className='w-full h-full bg-black/20'></div>
 							</div>
@@ -130,39 +264,16 @@ const Projects = () => {
 										<SiRedux className='text-violet-700 text-xl' />
 										<span className='font-medium text-sm'>Redux TK</span>
 									</div>
-								</div>
-								<a href='https://home-adminatete.vercel.app/fr' target='_blank'>
-									<button className='border group-hover/main:bg-white border-sky-600 py-1 px-5 rounded group-hover/main:shadow-lg duration-300 font-medium flex gap-2 items-center text-sky-600'>
-										<span>Visit</span>
-										<PiArrowSquareOutThin />
-									</button>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div className='w-full shadow-md border-t-2 border-sky-800 bg-transparent hover:bg-slate-100 duration-300 flex flex-col group/main'>
-						<div className='cursor-pointer'>
-							<div className='w-full h-72 border-b-2 bg-[url("/images/projects/spotify.jpg")] bg-cover'>
-								<div className='w-full h-full bg-black/20'></div>
-							</div>
-							<div className='w-full p-5 flex justify-between items-end'>
-								<div>
-									<p className='text-2xl font-semibold text-neutral'>
-										Agency Landing page and Blog
-									</p>
-								</div>
-							</div>
-							<div className='w-full flex justify-between items-end p-5 pt-0 mb-3'>
-								<div className='flex gap-3 items-center justify-start mt-5'>
 									<div className='flex items-center gap-1'>
-										<SiFigma className='text-pink-400 text-xl' />
-										<span className='font-medium text-sm'>Figma</span>
+										<SiNestjs className='text-red-500 text-xl' />
+										<span className='font-medium text-sm'>Nest.js</span>
+									</div>
+									<div className='flex items-center gap-1'>
+										<SiPrisma className='text-slate-800 text-xl' />
+										<span className='font-medium text-sm'>Prisma</span>
 									</div>
 								</div>
-								<a
-									href='https://www.figma.com/proto/gwLgGU1KekInUjzM2NzYh3/Projet-GDA-Students?type=design&node-id=192-2940&t=cHRRu8KNa4ZCXZ6C-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=192%3A2940&show-proto-sidebar=1'
-									target='_blank'
-								>
+								<a href='https://home-adminatete.vercel.app/fr' target='_blank'>
 									<button className='border group-hover/main:bg-white border-sky-600 py-1 px-5 rounded group-hover/main:shadow-lg duration-300 font-medium flex gap-2 items-center text-sky-600'>
 										<span>Visit</span>
 										<PiArrowSquareOutThin />
