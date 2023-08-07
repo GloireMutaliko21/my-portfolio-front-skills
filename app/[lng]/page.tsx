@@ -7,6 +7,7 @@ import Hero from './components/Hero';
 import Experience from './components/Experience';
 import Services from './components/Services';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 export async function generateMetadata({ params: { lng } }: any) {
 	const { t } = await useTranslation(lng, '');
@@ -23,6 +24,7 @@ export default function Home() {
 			<Experience />
 			<Services />
 			<Projects />
+			<Contact />
 		</main>
 	);
 }

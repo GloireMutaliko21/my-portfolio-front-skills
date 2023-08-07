@@ -48,7 +48,7 @@ const Navbar = ({ lng }: any) => {
 				scrolling
 					? 'bg-[#0f172a] shadow text-white fixed'
 					: 'bg-transparent text-[#0f172a] border-[#0f172a]'
-			} transition-all duration-300 text-primary-400 top-0 left-0 right-0 backdrop-blur-md z-10 py-3 xl:py-5 px-2 md:px-10 lg:px-16 xl:px-20 2xl:px-72 w-full flex justify-between items-center`}
+			} duration-1000 text-primary-400 top-0 left-0 right-0 backdrop-blur-md z-10 py-3 xl:py-5 px-2 md:px-10 lg:px-16 xl:px-20 2xl:px-72 w-full flex justify-between items-center`}
 		>
 			<FullPath
 				label={
