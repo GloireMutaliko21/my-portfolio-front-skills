@@ -22,7 +22,7 @@ const Hero = () => {
 					</h1>
 					<div className='text-sky-700 dark:text-connerColor text-xl sm:text-4xl'>
 						<Typewriter
-							text={['Frontend developer', 'UI/UX Designer']}
+							text={['Fullstack developer', 'UI/UX Designer']}
 							loop={true}
 							speed={250}
 							cursor
