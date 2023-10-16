@@ -30,8 +30,8 @@ const Hero = () => {
 					</div>
 					<div className='w-full lg:max-w-[50%] mt-6 font-light'>
 						<p>
-							I am Gloire Mutaliko, web fullstack developer but passionate with
-							frontend development and UI/UX design. I design and build web,
+							I am Gloire Mutaliko, web fullstack developer with more passion to
+							modern web and web mobile development. I design and build web,
 							mobile and desktop applications.
 						</p>
 					</div>
